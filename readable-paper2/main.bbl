@@ -1,6 +1,35 @@
 \begin{thebibliography}{}
 
 \bibitem [\protect \citeauthoryear {%
+Chan%
+, Jaitly%
+, Le%
+\BCBL {}\ \BBA {} Vinyals%
+}{%
+Chan%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2015}}%
+}]{%
+chan-2015}
+\APACinsertmetastar {%
+chan-2015}%
+\begin{APACrefauthors}%
+Chan, W.%
+, Jaitly, N.%
+, Le, Q\BPBI V.%
+\BCBL {}\ \BBA {} Vinyals, O.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2015}{8}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Listen, Attend and Spell}} {{Listen, Attend and
+  Spell}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{arXiv: Computation and Language}{}{}{}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Hernandez%
 }{%
 Hernandez%
@@ -58,6 +87,40 @@ Pascual, R.%
 \begin{APACrefURL}
   \url{https://journals.upd.edu.ph/index.php/sciencediliman/article/view/5622}
   \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Rasmussen%
+, Tan%
+, Lindberg%
+\BCBL {}\ \BBA {} Jensen%
+}{%
+Rasmussen%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2009}}%
+}]{%
+rasmussen-2009}
+\APACinsertmetastar {%
+rasmussen-2009}%
+\begin{APACrefauthors}%
+Rasmussen, M\BPBI H.%
+, Tan, Z\BHBI H.%
+, Lindberg, B.%
+\BCBL {}\ \BBA {} Jensen, S\BPBI H.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2009}{9}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{A system for detecting miscues in dyslexic read
+  speech}} {{A system for detecting miscues in dyslexic read speech}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Interspeech 2009}{}{}{}.
+\newblock
+\begin{APACrefURL} \url{http://dx.doi.org/10.21437/interspeech.2009-448}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.21437/interspeech.2009-448} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
