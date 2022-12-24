@@ -1,21 +1,34 @@
 %   Filename    : chapter_4.tex 
 \chapter{Research Methodology}
-This chapter lists and discusses the specific steps and activities that will be performed  to accomplish the project. 
-The discussion covers the activities from pre-proposal to Final SP Writing.
+This chapter lists and discusses the specific steps and activities that will be performed to accomplish the project.
 
 \section{Research Activities}
-Research activities include inquiry, survey, research, brainstorming, canvassing, consultation, review, interview, observe, experiment, design, test, document, etc.  
-Be sure that for each method, process, or algorithm used, there is a justification why that method was chosen.
-The methodology also includes the following information:
+For this paper, we will be utilizing the Kaldi ASR toolkit. Kaldi is popular when it comes to automatic speech recognition because it is flexible and accessible compared to the other ASR toolkits. For the audio file, three speakers will utter two-to-three syllables of Hiligaynon words. These audio files will be grouped and classified as testing and training data. Each audio file has a corresponding transcription text document that will help in achieving an accurate model result. Speakers are also required to record the given words clearly and audibly. Different speakers for the testing and training audio data will be observed to yield an unbiased result.
 
-\begin{itemize}
-   \item who is responsible for the task
-   \item the resource person to be contacted
-   \item what will be done
-   \item when and how long will the activity be done
-   \item where will it be done
-   \item why should be activity be done
-\end{itemize}
+One important key component for the Kaldi to function is its various phonemes. These phonemes were paired with words from the system’s local dictionary. The table below shows the phonemes that will be used in this study.
+
+\begin{table}[h]   %t means place on top, replace with b if you want to place at the bottom
+	\setlength{\extrarowheight}{2pt}
+	\setlength{\tabcolsep}{0.2em}
+	\centering
+	\caption{Table of Hiligaynon-specific phonemes used in training the system's acoustic model (Gavieta, et al., 2022, p. 20)} \vspace{0.25em}
+	\begin{tabular}{|p{2in}|c|c|} \hline
+		\centering Phone Class & Phones/Diphone \\ \hline
+		Bilabial stops & /p/, /b/ \\ \hline
+		Dental stops & /t/, /d/ \\ \hline
+		Velar stops & /k/, /g/  \\ \hline
+		Africate & j \\ \hline
+		Fricatives & /s/, /sh/, /v/, /z/, /f/  \\ \hline
+		Nasals & /m/, /n/m /ng/  \\ \hline
+		Liquids & /l/, /r/ \\ \hline
+		Semivowels/Glides & /w/, /y/  \\ \hline
+		Vowels & /i/, /e/, /a/, /o/, /u/ \\ \hline
+		Diphones & /ha/, /he/, /hi/, /ho/, /hu/, /at/, /aw/, /ay/, /oy/ \\ \hline
+		
+		
+	\end{tabular}
+	\label{tab:phoneme-hiligaynon}
+\end{table}
 
 
 \section{Calendar of Activities}
@@ -43,20 +56,21 @@ one week worth of activity.
    \newcommand{\weekfour}{$\star \star \star \star$ }
 \end{comment}
 
-
-
-\begin{table}[ht]   %t means place on top, replace with b if you want to place at the bottom
+\begin{table}[!]   %t means place on top, replace with b if you want to place at the bottom
+\setlength{\extrarowheight}{2pt}
+\setlength{\tabcolsep}{0.2em}
 \centering
 \caption{Timetable of Activities} \vspace{0.25em}
-\begin{tabular}{|p{2in}|c|c|c|c|c|c|c|c|} \hline
-\centering Activities (2009) & Jan   & Feb & Mar & Apr & May & Jun & Jul \\ \hline
-Study on Prerequisite Knowledge      &   &  & ~~~\weektwo & \weekfour &  &  &  \\ \hline
-Review of Existing Racing Strategies & ~~~\weektwo  & \weekfour & \weekfour & \weekfour &  &  &  \\ \hline
-Identification of Best Features      &   &  &  & \weekfour & \weektwo~~~ &  &  \\ \hline
-Development of Racing Strategies     &   &  &  & ~~~\weektwo & \weekfour & \weektwo~~~ &  \\ \hline
-Simulation of Racing Strategies      &   &  &  & ~~~\weektwo & \weekfour & \weekthree~~ &  \\ \hline
-Analysis and Interpretation of the Results &   &  &  &  & \weekfour & \weekfour & \weekone~~~~~ \\ \hline
-Documentation & ~~~\weektwo  & \weekfour & \weekfour & \weekfour & \weekfour & \weekfour & \weektwo~~~ \\ \hline
+\begin{tabular}{|p{2in}|c|c|c|c|c|c|c|c|c|c|c|} \hline
+\centering Activities (2009) & Sept & Oct & Nov & Dec & Jan & Feb & Mar & Apr & May & Jun & Jul\\ \hline
+Prerequisite knowledge research & ~~~\weektwo & ~~~\weektwo & & & & & & & & &\\ \hline
+Identification of potential proposal and features &  & \weektwo & \weekthree & & & & & & & &\\ \hline
+Writing of proposal paper     &   &  & \weekone & \weekfour & & & & & & &\\ \hline
+Recording of audio files    & & &  & & & \weektwo~~~ &  & & & &\\ \hline
+Modeling     &   &  &  & & & \weekone & \weekthree & \weekone & & &\\ \hline
+Development of the system &   &  &  &  &  &  & \weekone~~~~~ & \weekthree & \weektwo & \weekone &\\ \hline
+Analyzing and interpretation of the results & & & & & & & & & \weekthree & \weekone &\\ \hline
+Documentation & ~~~\weektwo  & \weekfour & \weekfour & \weekfour &  & \weekthree & \weekfour & \weekthree & \weekfour & \weekone & \weekone \\ \hline
 \end{tabular}
 \label{tab:timetableactivities}
 \end{table}
