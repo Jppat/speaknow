@@ -7,12 +7,15 @@
 \contentsline {section}{\numberline {1.4}Scope and Limitations of the Research}{4}{}%
 \contentsline {section}{\numberline {1.5}Significance of the Research}{4}{}%
 \contentsline {chapter}{\numberline {2}Review of Related Literature}{5}{}%
-\contentsline {section}{\numberline {2.1}Theme 1 Title}{5}{}%
-\contentsline {section}{\numberline {2.2}Theme 2 Title}{6}{}%
-\contentsline {chapter}{\numberline {3}Research Methodology}{7}{}%
-\contentsline {section}{\numberline {3.1}Research Activities}{7}{}%
-\contentsline {section}{\numberline {3.2}Calendar of Activities}{8}{}%
-\contentsline {chapter}{\numberline {4}Preliminary Results/System Prototype}{9}{}%
-\contentsline {chapter}{\numberline {A}Appendix}{10}{}%
-\contentsline {chapter}{\numberline {B}Resource Persons}{11}{}%
-\contentsline {chapter}{References}{12}{}%
+\contentsline {section}{\numberline {2.1}Philippine Education Crisis}{5}{}%
+\contentsline {section}{\numberline {2.2}Speech Recognition and Reading Miscue Detection}{6}{}%
+\contentsline {section}{\numberline {2.3}The Language Dilemma}{6}{}%
+\contentsline {section}{\numberline {2.4}Kaldi ASR Toolkit}{7}{}%
+\contentsline {section}{\numberline {2.5}The Hiligaynon Language}{7}{}%
+\contentsline {chapter}{\numberline {3}Research Methodology}{9}{}%
+\contentsline {section}{\numberline {3.1}Research Activities}{9}{}%
+\contentsline {section}{\numberline {3.2}Calendar of Activities}{10}{}%
+\contentsline {chapter}{\numberline {4}Preliminary Results/System Prototype}{11}{}%
+\contentsline {chapter}{\numberline {A}Appendix}{12}{}%
+\contentsline {chapter}{\numberline {B}Resource Persons}{13}{}%
+\contentsline {chapter}{References}{14}{}%
