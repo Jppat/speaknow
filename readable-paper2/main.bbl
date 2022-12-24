@@ -161,6 +161,38 @@ Hernandez, J.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Kipyatkova%
+\ \BBA {} Karpov%
+}{%
+Kipyatkova%
+\ \BBA {} Karpov%
+}{%
+{\protect \APACyear {2016}}%
+}]{%
+kipyatkova-2016}
+\APACinsertmetastar {%
+kipyatkova-2016}%
+\begin{APACrefauthors}%
+Kipyatkova, I.%
+\BCBT {}\ \BBA {} Karpov, A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2016}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{DNN-Based Acoustic Modeling for Russian Speech
+  Recognition Using Kaldi}} {{DNN-Based Acoustic Modeling for Russian Speech
+  Recognition Using Kaldi}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Speech and Computer}{}{}{246--253}.
+\newblock
+\begin{APACrefURL} \url{http://dx.doi.org/10.1007/978-3-319-43958-7_29}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1007/978-3-319-43958-7\{_}29} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Pascual%
 \ \BBA {} Guevara%
 }{%
@@ -191,6 +223,40 @@ Pascual, R.%
 \newblock
 \begin{APACrefURL}
   \url{https://journals.upd.edu.ph/index.php/sciencediliman/article/view/5622}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Povey%
+\ \protect \BOthers {.}}{%
+Povey%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2011}}%
+}]{%
+povey-2011}
+\APACinsertmetastar {%
+povey-2011}%
+\begin{APACrefauthors}%
+Povey, D.%
+, Ghoshal, A.%
+, Boulianne, G.%
+, Burget, L.%
+, Glembek, O.%
+, Goel, N\BPBI K.%
+\BDBL {}Vesely, K.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2011}{1}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{The Kaldi Speech Recognition Toolkit}} {{The Kaldi
+  Speech Recognition Toolkit}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{IEEE Automatic Speech Recognition and Understanding
+  Workshop}{}{}{}.
+\newblock
+\begin{APACrefURL}
+  \url{https://publications.idiap.ch/downloads/papers/2012/Povey_ASRU2011_2011.pdf}
   \end{APACrefURL}
 \PrintBackRefs{\CurrentBib}
 
@@ -255,6 +321,67 @@ UNICEF%
 \begin{APACrefURL}
   \url{https://www.unicef.org/reports/where-are-we-education-recovery}
   \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Upadhyaya%
+, Farooq%
+, Abidi%
+\BCBL {}\ \BBA {} Varshney%
+}{%
+Upadhyaya%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2017}}%
+}]{%
+upadhyaya-2017}
+\APACinsertmetastar {%
+upadhyaya-2017}%
+\begin{APACrefauthors}%
+Upadhyaya, P.%
+, Farooq, O.%
+, Abidi, M\BPBI R.%
+\BCBL {}\ \BBA {} Varshney, Y\BPBI V.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2017}{3}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Continuous hindi speech recognition model based on
+  Kaldi ASR toolkit}} {{Continuous hindi speech recognition model based on
+  Kaldi ASR toolkit}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{2017 International Conference on Wireless
+  Communications, Signal Processing and Networking (WiSPNET)}{}{}{}.
+\newblock
+\begin{APACrefURL} \url{http://dx.doi.org/10.1109/wispnet.2017.8299868}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1109/wispnet.2017.8299868} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Wolfenden%
+}{%
+Wolfenden%
+}{%
+{\protect \APACyear {2019}}%
+}]{%
+wolfenden-2019}
+\APACinsertmetastar {%
+wolfenden-2019}%
+\begin{APACrefauthors}%
+Wolfenden, E.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2019}.
+\newblock
+\APACrefbtitle {{Hiligaynon Reference Grammar}} {{Hiligaynon Reference
+  Grammar}}\ (\PrintOrdinal{Open Access}\ \BEd).
+\newblock
+\APACaddressPublisher{}{University of Hawaii Press}.
+\newblock
+\begin{APACrefURL} \url{https://core.ac.uk/display/211329359} \end{APACrefURL}
 \PrintBackRefs{\CurrentBib}
 
 \end{thebibliography}

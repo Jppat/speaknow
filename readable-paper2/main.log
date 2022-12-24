@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8.28) (preloaded format=pdflatex 2022.9.21)  24 DEC 2022 18:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8.28) (preloaded format=pdflatex 2022.9.21)  24 DEC 2022 18:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -332,14 +332,14 @@ LaTeX Info: Redefining \BHBI on input line 130.
 \openout2 = `abstract.aux'.
 
  (abstract.tex
-LaTeX Font Info:    Trying to load font information for U+msa on input line 10.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 11.
 
 
 (C:\Users\Patrick Panizales\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\um
 sa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 10.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 11.
 
 
 (C:\Users\Patrick Panizales\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\um
@@ -493,24 +493,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 148--162
 (chapter_2.aux) (chapter_3.aux) (chapter_4.aux) (appendix_A.aux)
 (appendix_B.aux)) ) 
 Here is how much of TeX's memory you used:
- 4968 strings out of 475389
- 80912 string characters out of 2771300
- 427316 words of memory out of 3000000
- 26214 multiletter control sequences out of 15000+600000
+ 4981 strings out of 475389
+ 81123 string characters out of 2771300
+ 427732 words of memory out of 3000000
+ 26227 multiletter control sequences out of 15000+600000
  477518 words of font info for 59 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 77i,10n,81p,1622b,308s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 77i,10n,81p,1622b,359s stack positions out of 10000i,1000n,20000p,200000b,80000s
  <C:\Users\Patrick Panizales\AppData\Local\MiKTeX\fonts/pk/l
 jfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/Patrick Panizales/AppData/Local/
 Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Patrick Pan
 izales/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb
 ><C:/Users/Patrick Panizales/AppData/Local/Programs/MiKTeX/fonts/type1/public/a
 msfonts/cm/cmr12.pfb><C:/Users/Patrick Panizales/AppData/Local/Programs/MiKTeX/
-fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/Patrick Panizales/AppData/L
-ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on main.pdf (22 pages, 114593 bytes).
+fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Patrick Panizales/AppData/L
+ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/Patric
+k Panizales/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12
+.pfb>
+Output written on main.pdf (22 pages, 127227 bytes).
 PDF statistics:
- 103 PDF objects out of 1000 (max. 8388607)
+ 108 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
