@@ -3,41 +3,25 @@
 This chapter lists and discusses the specific steps and activities that will be performed to accomplish the project.
 
 \section{Research Activities}
-For this paper, we will be utilizing the Kaldi ASR toolkit. Kaldi is popular when it comes to automatic speech recognition because it is flexible and accessible compared to the other ASR toolkits. For the audio file, three speakers will utter two-to-three syllables of Hiligaynon words. These audio files will be grouped and classified as testing and training data. Each audio file has a corresponding transcription text document that will help in achieving an accurate model result. Speakers are also required to record the given words clearly and audibly. Different speakers for the testing and training audio data will be observed to yield an unbiased result.
+\subsection{Acoustic Modelling}
+For this paper, we will be utilizing the Kaldi ASR toolkit for modelling the acoustic model. Kaldi is popular when it comes to automatic speech recognition because it is flexible and accessible compared to the other ASR toolkits. 
 
-One important key component for the Kaldi to function is its various phonemes. These phonemes were paired with words from the system’s local dictionary. The table below shows the phonemes that will be used in this study.
+For the audio file, three speakers will utter two-to-three syllables of Hiligaynon words. These audio files will be grouped and classified as testing and training data. Each audio file has a corresponding transcription text document that will help in achieving an accurate model result. Speakers are also required to record the given words clearly and audibly. Different speakers for the testing and training audio data will be observed to yield an unbiased result.
 
-\begin{table}[h]   %t means place on top, replace with b if you want to place at the bottom
-	\setlength{\extrarowheight}{2pt}
-	\setlength{\tabcolsep}{0.2em}
-	\centering
-	\caption{Table of Hiligaynon-specific phonemes used in training the system's acoustic model (Gavieta, et al., 2022, p. 20)} \vspace{0.25em}
-	\begin{tabular}{|p{2in}|c|c|} \hline
-		\centering Phone Class & Phones/Diphone \\ \hline
-		Bilabial stops & /p/, /b/ \\ \hline
-		Dental stops & /t/, /d/ \\ \hline
-		Velar stops & /k/, /g/  \\ \hline
-		Africate & /j/ \\ \hline
-		Fricatives & /s/, /sh/, /v/, /z/, /f/  \\ \hline
-		Nasals & /m/, /n/m /ng/  \\ \hline
-		Liquids & /l/, /r/ \\ \hline
-		Semivowels/Glides & /w/, /y/  \\ \hline
-		Vowels & /i/, /e/, /a/, /o/, /u/ \\ \hline
-		Diphones & /ha/, /he/, /hi/, /ho/, /hu/, /at/, /aw/, /ay/, /oy/ \\ \hline
-		
-		
-	\end{tabular}
-	\label{tab:phoneme-hiligaynon}
-\end{table}
+One important key component for the Kaldi to function is its various phonemes. These phonemes were paired with words from the system’s local dictionary. Table ~\ref{tab:phoneme-hiligaynon} from page ~\pageref{tab:phoneme-hiligaynon} shows the phonemes that will be used for this study's acoustic modelling.
 
+\subsection{Forced Alignment}
+\citeauthor{pascual-2017} \citeyear{pascual-2017} implemented an HMM-based Viterbi-forced alignment method to produce a likelihood score that tells whether there are reading miscues to the input speech in reference to the target speech. A threshold-based classification using a threshold likelihood score was used to determine this decision. Similarly, \citeauthor{rasmussen-2009} \citeyear{rasmussen-2009} also implemented a forced-alignment method to detect reading miscues. This shows how time-aligned transcriptions are useful for application related to speech recognition \cite{dimzon-2020}.
+
+In this study, reading miscue detection is aimed to be achieved also by forced alignment method. The Kaldi ASR toolkit includes alignment scripts, which the study aims to use for the mentioned objective.Kaldi's alignment process outputs a sequence of alignment ids which tell what was spoken in a given frame.
+
+This information will then be used as inputs for a logistic regression model to calculate the probability of an utterance being acceptable, in reference to a target speech or audio data. This is similar to the approach of \citeauthor{pascual-2017} \citeyear{pascual-2017}, where their study used threshold-based classification to determine the likelihood of detecting reading miscues.
+
+\subsection{Evaluation}
+
+Evaluation of the system will be done by measuring the word error rate across different iterations of a 5-fold cross validation technique to maximize the items gathered for the dataset.
 
 \section{Calendar of Activities}
-
-A Gantt chart showing the schedule of the activities should be included as a table. For example:
-
-Table \ref{tab:timetableactivities} shows a Gantt chart of the activities.  Each bullet represents approximately
-one week worth of activity.
-
 %
 %  the following commands will be used for filling up the bullets in the Gantt chart
 %
@@ -56,22 +40,26 @@ one week worth of activity.
    \newcommand{\weekfour}{$\star \star \star \star$ }
 \end{comment}
 
+
+Table \ref{tab:timetableactivities} shows a Gantt chart of the activities.  Each bullet represents approximately
+one week worth of activity.
+
 \begin{table}[!]   %t means place on top, replace with b if you want to place at the bottom
-\setlength{\extrarowheight}{2pt}
-\setlength{\tabcolsep}{0.2em}
-\centering
-\caption{Timetable of Activities} \vspace{0.25em}
-\begin{tabular}{|p{2in}|c|c|c|c|c|c|c|c|c|c|c|} \hline
-\centering Activities (2009) & Sept & Oct & Nov & Dec & Jan & Feb & Mar & Apr & May & Jun & Jul\\ \hline
-Prerequisite knowledge research & ~~~\weektwo & ~~~\weektwo & & & & & & & & &\\ \hline
-Identification of potential proposal and features &  & \weektwo & \weekthree & & & & & & & &\\ \hline
-Writing of proposal paper     &   &  & \weekone & \weekfour & & & & & & &\\ \hline
-Recording of audio files    & & &  & & & \weektwo~~~ &  & & & &\\ \hline
-Modeling     &   &  &  & & & \weekone & \weekthree & \weekone & & &\\ \hline
-Development of the system &   &  &  &  &  &  & \weekone~~~~~ & \weekthree & \weektwo & \weekone &\\ \hline
-Analyzing and interpretation of the results & & & & & & & & & \weekthree & \weekone &\\ \hline
-Documentation & ~~~\weektwo  & \weekfour & \weekfour & \weekfour &  & \weekthree & \weekfour & \weekthree & \weekfour & \weekone & \weekone \\ \hline
-\end{tabular}
-\label{tab:timetableactivities}
+	\setlength{\extrarowheight}{2pt}
+	\setlength{\tabcolsep}{0.2em}
+	\centering
+	\caption{Timetable of Activities} \vspace{0.25em}
+	\begin{tabular}{|p{2in}|c|c|c|c|c|c|c|c|c|c|c|} \hline
+		\centering Activities (2009) & Sept & Oct & Nov & Dec & Jan & Feb & Mar & Apr & May & Jun & Jul\\ \hline
+		Prerequisite knowledge research & ~~~\weektwo & ~~~\weektwo & & & & & & & & &\\ \hline
+		Identification of potential proposal and features &  & \weektwo & \weekthree & & & & & & & &\\ \hline
+		Writing of proposal paper     &   &  & \weekone & \weekfour & & & & & & &\\ \hline
+		Recording of audio files    & & &  & & & \weektwo~~~ &  & & & &\\ \hline
+		Modeling     &   &  &  & & & \weekone & \weekthree & \weekone & & &\\ \hline
+		Development of the system &   &  &  &  &  &  & \weekone~~~~~ & \weekthree & \weektwo & \weekone &\\ \hline
+		Analyzing and interpretation of the results & & & & & & & & & \weekthree & \weekone &\\ \hline
+		Documentation & ~~~\weektwo  & \weekfour & \weekfour & \weekfour &  & \weekthree & \weekfour & \weekthree & \weekfour & \weekone & \weekone \\ \hline
+	\end{tabular}
+	\label{tab:timetableactivities}
 \end{table}
 

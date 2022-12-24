@@ -1,6 +1,78 @@
 \begin{thebibliography}{}
 
 \bibitem [\protect \citeauthoryear {%
+Aquino%
+, Tsang%
+, Lucas%
+\BCBL {}\ \BBA {} de Leon%
+}{%
+Aquino%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2019}}%
+}]{%
+aquino-2019}
+\APACinsertmetastar {%
+aquino-2019}%
+\begin{APACrefauthors}%
+Aquino, A.%
+, Tsang, J\BPBI L.%
+, Lucas, C\BPBI R.%
+\BCBL {}\ \BBA {} de Leon, F.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2019}{8}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{G2P and ASR techniques for low-resource phonetic
+  transcription of Tagalog, Cebuano, and Hiligaynon}} {{G2P and ASR techniques
+  for low-resource phonetic transcription of Tagalog, Cebuano, and
+  Hiligaynon}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{2019 International Symposium on Multimedia and
+  Communication Technology (ISMAC)}{}{}{}.
+\newblock
+\begin{APACrefURL} \url{http://dx.doi.org/10.1109/ismac.2019.8836168}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1109/ismac.2019.8836168} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Billones%
+\ \BBA {} Dadios%
+}{%
+Billones%
+\ \BBA {} Dadios%
+}{%
+{\protect \APACyear {2014}}%
+}]{%
+billones-2014}
+\APACinsertmetastar {%
+billones-2014}%
+\begin{APACrefauthors}%
+Billones, R\BPBI K\BPBI C.%
+\BCBT {}\ \BBA {} Dadios, E\BPBI P.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2014}{11}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Hiligaynon language 5-word vocabulary speech
+  recognition using Mel frequency cepstrum coefficients and genetic algorithm}}
+  {{Hiligaynon language 5-word vocabulary speech recognition using Mel
+  frequency cepstrum coefficients and genetic algorithm}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{2014 International Conference on Humanoid,
+  Nanotechnology, Information Technology, Communication and Control,
+  Environment and Management (HNICEM)}{}{}{}.
+\newblock
+\begin{APACrefURL} \url{http://dx.doi.org/10.1109/hnicem.2014.7016247}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1109/hnicem.2014.7016247} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Chan%
 , Jaitly%
 , Le%
@@ -27,6 +99,39 @@ Chan, W.%
   Spell}}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{arXiv: Computation and Language}{}{}{}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Dimzon%
+\ \BBA {} Pascual%
+}{%
+Dimzon%
+\ \BBA {} Pascual%
+}{%
+{\protect \APACyear {2020}}%
+}]{%
+dimzon-2020}
+\APACinsertmetastar {%
+dimzon-2020}%
+\begin{APACrefauthors}%
+Dimzon, F\BPBI D.%
+\BCBT {}\ \BBA {} Pascual, R\BPBI M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2020}{12}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{An Automatic Phoneme Recognizer for Children’s
+  Filipino Read Speech}} {{An Automatic Phoneme Recognizer for Children’s
+  Filipino Read Speech}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{2020 IEEE International Conference on Teaching,
+  Assessment, and Learning for Engineering (TALE)}{}{}{}.
+\newblock
+\begin{APACrefURL} \url{http://dx.doi.org/10.1109/tale48869.2020.9368399}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1109/tale48869.2020.9368399} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
