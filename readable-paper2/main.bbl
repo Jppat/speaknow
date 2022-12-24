@@ -27,6 +27,40 @@ Hernandez, J.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Pascual%
+\ \BBA {} Guevara%
+}{%
+Pascual%
+\ \BBA {} Guevara%
+}{%
+{\protect \APACyear {2017}}%
+}]{%
+pascual-2017}
+\APACinsertmetastar {%
+pascual-2017}%
+\begin{APACrefauthors}%
+Pascual, R.%
+\BCBT {}\ \BBA {} Guevara, R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2017}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Experiments and Pilot Study Evaluating the Performance
+  of Reading Miscue Detector and Automated Reading Tutor for Filipino: A
+  Children’s Speech Technology for Improving Literacy}} {{Experiments and
+  Pilot Study Evaluating the Performance of Reading Miscue Detector and
+  Automated Reading Tutor for Filipino: A Children’s Speech Technology for
+  Improving Literacy}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Science Diliman}{29}{1}{5--36}.
+\newblock
+\begin{APACrefURL}
+  \url{https://journals.upd.edu.ph/index.php/sciencediliman/article/view/5622}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 UNICEF%
 , UNESCO%
 \BCBL {}\ \BBA {} Bank%
@@ -49,6 +83,10 @@ UNICEF%
 \newblock
 \APACrefbtitle {{Where are we on Education Recovery?}} {{Where are we on
   Education Recovery?}}\ \APACbVolEdTR{}{\BTR{}}.
+\newblock
+\begin{APACrefURL}
+  \url{https://www.unicef.org/reports/where-are-we-education-recovery}
+  \end{APACrefURL}
 \PrintBackRefs{\CurrentBib}
 
 \end{thebibliography}
