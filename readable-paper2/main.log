@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8.28) (preloaded format=pdflatex 2022.9.21)  25 DEC 2022 01:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8.28) (preloaded format=pdflatex 2022.9.21)  10 JAN 2023 19:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -517,12 +517,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 148--162
 (chapter_2.aux) (chapter_3.aux) (chapter_4.aux)) ) 
 Here is how much of TeX's memory you used:
  6397 strings out of 475389
- 108220 string characters out of 2771300
+ 110650 string characters out of 2771300
  451914 words of memory out of 3000000
  27643 multiletter control sequences out of 15000+600000
  477818 words of font info for 60 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 77i,10n,81p,1622b,515s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 77i,10n,81p,1596b,515s stack positions out of 10000i,1000n,20000p,200000b,80000s
  <C:\Users\Patrick Panizales\
 AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/P
 atrick Panizales/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/c
@@ -534,7 +534,7 @@ rs/Patrick Panizales/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/
 cm/cmsy10.pfb><C:/Users/Patrick Panizales/AppData/Local/Programs/MiKTeX/fonts/t
 ype1/public/amsfonts/cm/cmti12.pfb><C:/Users/Patrick Panizales/AppData/Local/Pr
 ograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on main.pdf (21 pages, 182379 bytes).
+Output written on main.pdf (21 pages, 182227 bytes).
 PDF statistics:
  119 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
