@@ -1,0 +1,70 @@
+%   Filename    : chapter_2.tex 
+\chapter{Review of Related Literature}
+\label{sec:relatedlit}
+
+\section{Philippine Education Crisis}
+The Philippines has faced a persistent and pervasive educational crisis, as evidenced by low literacy rates and learning outcomes, particularly among disadvantaged and marginalized groups. As mentioned earlier in the introduction, UNICEF, UNESCO, and the World Bank found that only 10\% of children could read simple text as of March 2022 in the Philippines. The World Bank also found that 90\% of children in the Philippines cannot read simple text by age 10. These statistics highlight the urgent need to address the education crisis in the Philippines and ensure that children have access to quality reading instruction.
+
+\citeauthor{pascual-2017} \citeyear{pascual-2017} conducted a study evaluating the performance of a reading miscue detector and automated reading tutor for Filipino, a language spoken in the Philippines. The study was conducted with a group of elementary school students in the Philippines, and the results showed that the reading miscue detector and automated reading tutor were effective in improving reading skills. The students who used the technology demonstrated significant improvements in reading fluency, accuracy, and comprehension, compared to a control group. These results highlight the potential of technology-based reading tutors to improve reading skills among children in the Philippines.
+
+
+\section{Speech Recognition and Reading Miscue Detection}
+Reading miscue detection tasks inevitably borrow concepts from the development of speech processing technology, particularly speech recognition. Automatic Reading Tutors, such as the one developed by \citeauthor{pascual-2017} \citeyear{pascual-2017}, are machine-aided systems designed to help its users improve their skill in reading by offering help or guidance when it detects reading miscues or disfluencies in user input reading speech. Part of the approach in their system involved deriving the phone symbol sequence corresponding to the input speech, which they force aligned with a reference speech to determine deviations based on a computed likelihood score. This process can benefit from speech recognition, where various types of acoustic and/or language models, especially machine learning models are used to make sense of acoustic signals by extracting features from the said signals. These features can then be used as inputs for analysis or to whatever tasks the authors deem to be appropriate. A study by \citeauthor{rasmussen-2009} \citeyear{rasmussen-2009} also used an ASR component in their system for detecting miscues in dyslexic read speech.
+
+In their study "Listen, Attend and Spell," \citeauthor{chan-2015} \citeyear{chan-2015} proposed a neural network architecture for automatic speech recognition (ASR) that they dubbed the "Listen, Attend and Spell" (LAS) model. The LAS model was designed to be a more efficient and accurate ASR system, particularly for languages with limited data availability. The LAS model utilizes an attention mechanism, which allows the model to focus on specific parts of the input audio, rather than processing the entire audio signal at once. This allows the model to better handle the variability and noise present in real-world audio, and it enables the model to learn more efficiently and accurately. The LAS model was tested on several datasets and outperformed existing ASR systems, demonstrating its effectiveness for automatic speech recognition tasks.
+
+Indeed, speech recognition is one key component of computer-assisted language learning systems.
+
+
+\section{The Language Dilemma}
+While there is a wealth of English-oriented ASR systems, other languages, especially lesser known languages tend to struggle in these situations. For instance, most leading tech companies tend to focus on developing speech recognition technologies for the English language such as DeepSpeech, Mozilla’s speech to text engine and OpenAI’s Whisper. In the context of Philippine languages, research in speech processing technologies for the Filipino language is by no means a desert, however developing efficient ASR systems for the said language have yet to be seen, as noted by \citeauthor{dimzon-2020} \citeyear{dimzon-2020} . For instance the previously mentioned authors — guided by the motivation to fill in knowledge gaps in Filipino phoneme recognition — were able to develop an “Automatic Phoneme Recognizer for Children’s Filipino Read Speech”. Additionally, \citeauthor{aquino-2019} \citeyear{aquino-2019} was able to develop a system using a grapheme to phoneme (G2P) approach, in conjunction with selected ASR models which have been found out to be just as effective as human transcribers. Other local languages, however, are challenged by limited resources but efforts are underway. \citeauthor{billones-2014} \citeyear{billones-2014} conducted a study, where they created a 5-word vocabulary speech recognition system for Hiligaynon terms used as motion commands implemented for a breast self-examination (BSE) multimedia training system.
+
+\section{Kaldi ASR Toolkit}
+\citeauthor{povey-2011} \citeyear{povey-2011} described Kaldi as a modern toolkit for speech recognition. It is designed to be extensible and has one of the least restrictive licenses making it more accessible. Several studies have incorporated Kaldi into their implementations. 
+
+For instance, \citeauthor{upadhyaya-2017} \citeyear{upadhyaya-2017} , developed a continuous Hindi speech recognition model using Kaldi, citing the toolkit for its ability to create high quality lattices and sufficient speed for real time recognition. It also said that the mentioned toolkit is actively maintained and accessible. 
+
+Additionally, not only is Kaldi able to support conventional models such as gaussian mixture models (GMMs) but is also able to implement deep neural network based structures. For example, \citeauthor{kipyatkova-2016} \citeyear{kipyatkova-2016} developed a “DNN-Based Acoustic Modeling for Russian Speech Recognition Using Kaldi.” The paper mentioned using DNN implementations in Kaldi, ultimately choosing Dan’s implementation because of its support for parallel training on multiple CPUs.
+
+
+\section{The Hiligaynon Language}
+Hiligaynon, also known as Ilonggo, is an Austronesian language spoken in the Western Visayas region of the Philippines, particularly in the provinces of Iloilo, Guimaras, Negros Occidental, and Capiz. It is one of the major languages of the Philippines, spoken by millions of people as a first or second language.
+
+Hiligaynon has a rich and varied vocabulary, with many loanwords from Spanish, English, and other languages. According to Hiligaynon Reference Grammar by \citeauthor{wolfenden-2019} \citeyear{wolfenden-2019}, Hiligaynon has a complex verb conjugation and tense system, with a range of tense markers including markers for past, present, and future tense, as well as markers for perfective and imperfective aspect. The book also notes that Hiligaynon has a number of mood markers, including markers for indicative, imperative, and subjunctive mood.
+
+Additionally, Hiligaynon Reference Grammar by \citeauthor{wolfenden-2019} \citeyear{wolfenden-2019} describes the phonemic alphabet of Hiligaynon as consisting of 28 letters: A, B, C, D, E, F, G, H, I, J, K, L, M, N, Ñ, O, P, Q, R, S, T, U, V, W, X, Y, and Z. The book notes that the letters C, F, J, Q, V, X, and Z are not used as frequently in Hiligaynon as in other Philippine languages, and that the letter Ñ is used to represent the Spanish sound "ny."
+
+\begin{table}[htb]   %t means place on top, replace with b if you want to place at the bottom
+	\setlength{\extrarowheight}{0.1em}
+	\centering
+	\caption{Table of Hiligaynon-specific phonemes used in training the system's acoustic model (Gavieta, et al., 2022, p. 20)} 
+	\begin{tabular}{|p{2in}|c|c|} \hline
+		\centering Phone Class & Phones/Diphone \\ \hline
+		Bilabial stops & /p/, /b/ \\ \hline
+		Dental stops & /t/, /d/ \\ \hline
+		Velar stops & /k/, /g/  \\ \hline
+		Africate & /j/ \\ \hline
+		Fricatives & /s/, /sh/, /v/, /z/, /f/  \\ \hline
+		Nasals & /m/, /n/, /ng/  \\ \hline
+		Liquids & /l/, /r/ \\ \hline
+		Semivowels/Glides & /w/, /y/  \\ \hline
+		Vowels & /i/, /e/, /a/, /o/, /u/ \\ \hline
+		Diphones & /ha/, /he/, /hi/, /ho/, /hu/, /at/, /aw/, /ay/, /oy/ \\ \hline
+	\end{tabular}
+	\label{tab:phoneme-hiligaynon}
+\end{table}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

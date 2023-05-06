@@ -1,0 +1,67 @@
+%   Filename    : chapter_4.tex 
+\chapter{Results and Discussions/Analyses}
+This chapter provides a summary and analysis of the results obtained by decoding different training models, such as monophones, triphones (delta, delta + delta-delta), LDA + MLLT, SAT, and DNN. The information presented includes data extracted from each decoding model's WER files output, including the number of errors made (insertions, deletions, and substitutions), as well as the word and sentence error rates (WER and SER), and the average percentage of errors for each model.
+
+In order to have a reliable result, this project was tested through 6-fold cross-validation of every training model. There is a total of six speakers for this project. Each speaker is subjected to testing for every fold while the remaining speakers that are not chosen are set to be on the training part. Succeeding tables will present the results gathered through this process.
+
+\section{Mean results of five models}
+\begin{table}[htb]   %t means place on top, replace with b if you want to place at the bottom
+	\setlength{\extrarowheight}{0.1em}
+	\centering
+	\caption{Mean WER scores of the different models used for acoustic modelling} 
+	\begin{tabular}{|p{2in}|c|c|} \hline
+		\centering Model & Mean WER \\ \hline
+		Monophone & 4.69 \\ 
+		Triphone & 14.46 \\ 
+		LDA + MLLT & 17.34  \\ 
+		LDA + MLLT + SAT & 2.13 \\ 
+		DNN & 0.69  \\ \hline
+	\end{tabular}
+	\label{tab:mean_wer_models}
+\end{table}
+
+Table \ref{tab:mean_wer_models} shows the different mean word error rate of every acoustic model through six folds. The LDA + MLLT got the highest word error rate which is 17.34\% , followed by triphone model with mean WER of 14.46\%, monophone model got 4.69\% mean WER, LDA + MLLT + SAT model with 2.13 \% mean WER, lastly, the DNN model got the lowest mean WER which is 0.69\% among the five models. The numbers have proved that the DNN model is the best choice for this project.
+
+\section{DNN results through 6-fold cross-validation}
+\begin{table}[htb]   %t means place on top, replace with b if you want to place at the bottom
+	\setlength{\extrarowheight}{0.3em}
+	\centering
+	\begin{tabular}{|p{1in}|c|c|} \hline
+		\centering  & Mean WER & Mean SER \\ \hline
+		DNN Fold 1 & 0.78 & 19.55 \\ 
+		DNN Fold 2 & 1.0 & 20.00 \\ 
+		DNN Fold 3 & 0.95 & 21.36  \\ 
+		DNN Fold 4 & 0.00 & 0.00 \\ 
+		DNN Fold 5 & 0.24 & 5.91 \\ 
+            DNN Fold 6 & 1.15 & 16.82 \\ \hline
+	\end{tabular}
+        \caption{DNN model result across 6-folds} 
+	\label{tab:mean_wer_dnn}
+\end{table}
+
+Data from Table \ref{tab:mean_wer_dnn} presents the different word error rates and sentence error rates of the DNN model through each fold. Fold 6 DNN model have the highest mean WER which is 1.15\%, followed by fold 2 with mean WER of 1.00\%, next is fold 3 with 0.95\% mean WER, fold 1 with mean WER of 0.78\%, fold 5 DNN model with 0.24\% mean WER, and lastly, fold 4 got the lowest mean word error rate which is 0.00\%. Fold 4 comprises the fourth speaker on testing and the rest of the speaker is on the training part.
+
+\section{DNN result in fourth fold}
+\begin{table}[htb]   %t means place on top, replace with b if you want to place at the bottom
+        \setlength{\extrarowheight}{0.3em}
+ 	\centering
+ 	\begin{tabular}{|p{1in}|c|c|c|c|c|} \hline
+ 		\centering  & WER & SER & Insert & Delete & Substitution \\ \hline
+ 		\centering wer\_7 & 0.00 & 0.00 & 0 & 0 & 0 \\ 
+ 		\centering wer\_8 & 0.00 & 0.00 & 0 & 0 & 0 \\ 
+            \centering wer\_9 & 0.00 & 0.00 & 0 & 0 & 0 \\ 
+            \centering wer\_10 & 0.00 & 0.00 & 0 & 0 & 0 \\ 
+            \centering wer\_11 & 0.00 & 0.00 & 0 & 0 & 0 \\ 
+            \centering wer\_12 & 0.00 & 0.00 & 0 & 0 & 0 \\ 
+            \centering wer\_13 & 0.00 & 0.00 & 0 & 0 & 0 \\ 
+            \centering wer\_14 & 0.00 & 0.00 & 0 & 0 & 0 \\ 
+            \centering wer\_15 & 0.00 & 0.00 & 0 & 0 & 0 \\ 
+            \centering wer\_16 & 0.00 & 0.00 & 0 & 0 & 0 \\ 
+            \centering wer\_17 & 0.00 & 0.00 & 0 & 0 & 0 \\ \hline
+            \centering MEAN & 0.00 & 0.00 & & & \\ \hline
+ 	\end{tabular}
+         \caption{DNN model result in fold 4} 
+ 	\label{tab:dnn_fold_4}
+\end{table}
+
+Table \ref{tab:dnn_fold_4} has the data gathered for the fourth fold DNN model after training the acoustic model. Each value for this fold is zero, including the WER and SER, and the insertion, delete, and substitution columns. The result implies that the fourth fold of the DNN model has no word or sentence errors and it did not detect either insertion, deletion, or substitution. Thus, among the different folds of the DNN model, the fourth fold is the most fitting model for this project.

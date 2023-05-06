@@ -1,0 +1,73 @@
+%   Filename    : chapter_4.tex 
+\chapter{Research Methodology}
+This chapter lists and discusses the specific steps and activities that will be performed to accomplish the project.
+
+\section{Research Activities}
+
+\subsection{Data Gathering}
+This chapter presents the research methodology employed by the researchers in conducting their study on developing a reading miscue detector using Hiligaynon words. The methodology includes the selection of the words, the creation of a dictionary, the selection of the speakers, the equipment used, and the recording setup.
+
+\subsubsection{Word Selection and Dictionary Creation}
+
+The researchers selected one thousand words from a corpus given by their thesis adviser. These words were limited to two to three syllables and were grade-appropriate. To ensure consistency in the pronunciation of the words, a dictionary was created for the Hiligaynon words. The phonemes used in the dictionary were based on the study conducted by Gavieta et al entitled Hilispeech: A Hiligaynon Speech Recognition System.
+
+\subsubsection{Selection of Speakers and Equipment Used}
+
+To gather the audio files needed for the study, six speakers were selected. Three of the speakers were the researchers themselves, while the other three were chosen based on availability. All of the speakers were native Hiligaynon speakers to ensure that the pronunciations were accurate. The researchers used noise canceling microphones to record the speakers.
+
+\subsubsection{Script Creation and Recording Setup}
+
+For each speaker, a script was created by randomly selecting five hundred words. The recording was done in a closed quiet room to ensure minimal background noise. Each audio file contained only 25 words, and the duration of the audio files was not limited. To ensure easy organization and identification of the audio files, the researchers came up with a naming system that includes the gender of the speaker, the speaker number, and the audio file number.
+
+\subsection{Preprocessing}
+The open-source digital audio editor Audacity was used for preprocessing the audio data. The data was first compressed using Audacity's compression effect, and then normalized using Audacity's Normalize effect.
+
+Leading and trailing parts of the audio were then cut to remove silent parts at the beginning and ending of the recording.
+
+The audio files were then saved to WAV format.
+
+\subsection{Acoustic Modelling}
+The Kaldi ASR toolkit was used for building the acoustic model.
+
+Files for the project was placed inside a folder of the same name under Kaldi's 'egs' directory. All of the recordings were placed under the directory data/audio (assuming readable as root directory).
+
+Following a 6-fold training and testing scheme, six folders were created for each fold. Each 'fold' folder contained metadata for the files corresponding to each fold. The following metadata files was created:
+
+\begin{itemize}
+    \item \textbf{wav.scp:} This file contains information about each file's file id and where the file is located. It contains data int the format of \textless file \textunderscore id \textgreater \textless path \textunderscore to \textunderscore file \textgreater 
+    
+    \item \textbf{text:} This file contains information about the file and the corresponding words uttered in that particular file's audio recording. It is writte in the format \textless utterance \textunderscore id \textgreater \textless series \textunderscore of \textunderscore words \textgreater
+    
+    \item \textbf{utt2spk:} This file contains information about the mapping of a specific file to it's corresponding speaker. It is written in the format \textless utterance \textunderscore id \textgreater \textless speaker \textunderscore id \textgreater
+
+    \item \textbf{spk2gender:} This file contains information indicating a specific speaker's gender. It is written in the format \textless speaker \textunderscore id \textgreater \textless gender \textgreater
+    
+\end{itemize}
+
+The following metadata which are not associated with a specific fold is also created.
+
+\begin{itemize}
+    \item \textbf{corpus.txt} This file contains all the words uttered in all of the recordings. Each line represents the words uttered in a specific file. This was placed under the data/local directory.
+
+    \item \textbf{lexicon.txt} This file contains information about all the words considered in the project's dictionary together with their phonemic transcriptions. Also included are the silence phones.
+
+    \item \textbf{nonsilence \textunderscore phones} This file contains all of the non silent phones considered by the project
+
+    \item \textbf{(silence \textunderscore phones.txt and  optional \textunderscore silence.txt} These files contains the silence phones included in the project.
+    
+\end{itemize}
+
+Training scripts were sourced from Kaldi's builtin scripts for different training algorithims namely: monophone, triphone, LDA+MLLT, LDA+MLLT+SAT and DNN.
+
+Training was done for each of the six folds, with each training algorithm applied to each fold. The best results were then noted for each training algorithm for each fold.
+
+%\subsection{Forced Alignment}
+%\citeauthor{pascual-2017} \citeyear{pascual-2017} implemented an HMM-based Viterbi-forced alignment method to produce a likelihood score that tells whether there are reading miscues to the input speech in reference to the target speech. A threshold-based classification using a threshold likelihood score was used to determine this decision. Similarly, \citeauthor{rasmussen-2009} \citeyear{rasmussen-2009} also implemented a forced-alignment method to detect reading miscues. This shows how time-aligned transcriptions are useful for applications related to speech recognition \cite{dimzon-2020}.
+
+%In this study, reading miscue detection is aimed to be achieved by forced alignment method, as well. The Kaldi ASR toolkit includes alignment scripts, which the study aims to use for the mentioned objective. Kaldi's alignment process outputs a sequence of alignment ids which tell what was spoken in a given frame.
+
+%This information will then be used as inputs for a logistic regression model to calculate the probability of an utterance being acceptable, in reference to a target speech or audio data. This is similar to the approach of \citeauthor{pascual-2017} \citeyear{pascual-2017}, where their study used a threshold-based classification method to determine the likelihood of detecting reading miscues.
+
+\subsection{Evaluation}
+
+Evaluation was done by comparing the word error rate (WER) and sentence error rate (SER) for each model for each fold, across a 6-fold cross validation test.
